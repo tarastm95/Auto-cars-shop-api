@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./backend:/app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    restart: on-failure
+    command: >
+      sh -c "python manage.py wait_db && python manage.py runserver 0.0.0.0:8000"
+
+  db:
+    image: mysql:8
+    env_file:
+      - .env
+    volumes:
+      - ./mysql_db:/var/lib/mysql
+    ports:
+      - "3333:3306"
+    restart: on-failure
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: always
+
+  celery:
+    build:
+      context: .
+    command: celery -A configs worker --loglevel=info
+    volumes:
+      - ./backend:/app
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - db
+    restart: always
+
+  celery-beat:
+    build:
+      context: .
+    command: celery -A configs beat --scheduler django_celery_beat.schedulers:DatabaseScheduler --loglevel=info
+    volumes:
+      - ./backend:/app
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - db
+    restart: always

@@ -1,0 +1,1352 @@
+{
+	"info": {
+		"_postman_id": "08bc9ad7-3682-4b34-a9b6-77e10b1b9b82",
+		"name": "postman collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6370017"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/register/buyer/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTgyMjY0LCJpYXQiOjE3MzI5ODE5NjQsImp0aSI6ImY5YzdjNzY3MjhkNzQ1MWNiZjFkNTVmMTVkMjViNWY2IiwidXNlcl9pZCI6Mn0.W62tXHhJK8tsKLxCfp8UKleLjmfBLPADgQnnXjZSBc0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"buyer3\",\r\n    \"password\": \"Tecktonik1995\",\r\n    \"email\":\"buyer3@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/buyer/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						"buyer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/token/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\": \"Tecktonik1995\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/register/manager/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTgyNTEzLCJpYXQiOjE3MzI5ODIyMTMsImp0aSI6Ijc4MGYxMjg3NGExZjQyZTliYTZhZGU2MTdiNDYwM2ZhIiwidXNlcl9pZCI6Mn0.0z_v-eSJ466EY2SRKLzvj9esFPR_4qLlv0vhPSl-faU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"manager1\",\r\n    \"password\": \"Tecktonik1995\",\r\n    \"email\":\"manager1@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/manager/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						"manager",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyMzQ3MTkxLCJpYXQiOjE3MzIzNDY4OTEsImp0aSI6IjZjNzFkNjY2YWNmMTQxNzNhMTY0Y2I5MWZlYmRlNmNiIiwidXNlcl9pZCI6Nn0.3JW8AnMFBH6kqm2OGDnu7ts81hBJ0QcX-fkHSEx11Eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"manager1\",\r\n    \"password\": \"Tecktonik1995\",\r\n    \"email\":\"manager1@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/dealers/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyMzQ4MjQwLCJpYXQiOjE3MzIzNDc5NDAsImp0aSI6IjJmMDlmMzAzYmIwZjRjOWFiMjE1ZWZhZTVjYzIzNGU5IiwidXNlcl9pZCI6Nn0.o387e0UosdsKmnY1hSgxwk2_Vm1Ijo4WucUkuQB0CQI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/dealers/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dealers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/dealers/1/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyMzQ4NjExLCJpYXQiOjE3MzIzNDgzMTEsImp0aSI6IjE5YTgzYTI1NDU4MjQxODNiNjg3OTQ0NDIyYjJkY2I0IiwidXNlcl9pZCI6Nn0.gVfdLxkT2vjHFmr6e_cGMZCm3FRFbtn2XUM3x3Pmyvk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/dealers/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dealers",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyMzQ5MzM5LCJpYXQiOjE3MzIzNDkwMzksImp0aSI6IjlkYTdjN2Y1NmE1YTRkMjk4MDEwYjYzZjE0NzE5NTllIiwidXNlcl9pZCI6Nn0.qon9AaqGiibGd2SGALt5d7MOHg33qQNJJUnEh4qZVlw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/create/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDc1MTI2LCJpYXQiOjE3MzMwNzQ4MjYsImp0aSI6IjNlYjg1MDk2MGFhZDRmZDZhYWI1ZjU1OTU4ZGRhN2FmIiwidXNlcl9pZCI6M30.k3k8G99pdkf7cIYRVhMrKtZb0VLQ_v5MS2cv4nJzotk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"BMW\",\r\n    \"description\": \"About BMW\",\r\n    \"price\": \"10000\",\r\n    \"currency\": \"USD\",\r\n    \"brand\":\"BMW\",\r\n    \"model\":\"X6\",\r\n    \"year\":\"2020\",\r\n    \"city\":\"Dnipro\",\r\n    \"country\":\"Ukraine\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyMzUwODYyLCJpYXQiOjE3MzIzNTA1NjIsImp0aSI6IjYzZjczYjgxYjY1ODRmNTJhZWIyNmUzNDIzMjEzNWM3IiwidXNlcl9pZCI6M30.deh-xGahcgdH-imsXUND2wujzXjF7LlCS71F_67GBJc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/register/seller/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTgyMjY0LCJpYXQiOjE3MzI5ODE5NjQsImp0aSI6ImY5YzdjNzY3MjhkNzQ1MWNiZjFkNTVmMTVkMjViNWY2IiwidXNlcl9pZCI6Mn0.W62tXHhJK8tsKLxCfp8UKleLjmfBLPADgQnnXjZSBc0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"seller3\",\r\n    \"email\": \"seller3@gmail.com\",\r\n    \"password\":\"Tecktonik1995\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/seller/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						"seller",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/cars/1/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyMzU1MjMxLCJpYXQiOjE3MzIzNTQ5MzEsImp0aSI6ImQ4YmRhM2IyMzM0YTQ5OGQ4NDJkYjczOTYzYTEwNjRkIiwidXNlcl9pZCI6Nn0.vf2g_441yKuBLb4EaZOhVKbY97KeaXPI0pkgqvZ0hc4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand\": \"BMW\",\r\n    \"model\": \"X11\",\r\n    \"price\": \"2000\",\r\n    \"currency\": \"USD\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cars/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/accounts/cars/ad/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyNDg3ODIwLCJpYXQiOjE3MzI0ODc1MjAsImp0aSI6ImU4YmZjMzMzYmVlZDRlMTM4OWRlY2Q5NGQ5OTE3MDFiIiwidXNlcl9pZCI6NX0.fecB3QcOK8yuO2Ry4fZMzEMOEx7WbmMNkffSHOWVrqw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"BMW\",\r\n    \"description\": \"BMW\",\r\n    \"price\": \"20000\",\r\n    \"currency\": \"USD\",\r\n    \"model\": \"BMW\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/accounts/cars/ad/1/delete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"accounts",
+						"cars",
+						"ad",
+						"1",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/ban-user/4/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDUxMDY0LCJpYXQiOjE3MzMwNTA3NjQsImp0aSI6ImFlNGI0ZjQzZDUxNzQ2YTU4MThjYTJmOWRlNTVmMmQ4IiwidXNlcl9pZCI6OX0.honRjGaO4rIVgvFih-W2YzXJU-rAgI9DwtTVxx5MQ9I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/ban-user/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ban-user",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/ban-user/4/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDUwOTcyLCJpYXQiOjE3MzMwNTA2NzIsImp0aSI6ImVlOGRhYmYwNTM0NTQxN2Y4NDU1YWFmOGZlNDY3N2QyIiwidXNlcl9pZCI6OX0.d2urjNb-QNjyVCv04swawOL-F-ZgUKEaV6pYXw1QWS4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/ban-user/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ban-user",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/premium/generate/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyNjAyMDIwLCJpYXQiOjE3MzI2MDE3MjAsImp0aSI6Ijc3ZWZkNzA4YTMyMzQ4ZTViYzY4MDMzNjdhMzFhMDU3IiwidXNlcl9pZCI6Nn0.J40ULGiBMw1V8D0_fGrR6IbKviVexmVlv3ykhg0aawI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/premium/generate/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"premium",
+						"generate",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/premium/activate/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8a675a53fa934bda9dd55b98e26e3be4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/premium/activate/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"premium",
+						"activate",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/brands/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyNjA1NTE5LCJpYXQiOjE3MzI2MDUyMTksImp0aSI6IjFjNTUyYjViOTVlMzQxOWY5ZmZiZjJiZmYyOWUzYTYzIiwidXNlcl9pZCI6Nn0.7qIPlTfHbudn4U8oo30iyfFVfggPEyYoQin2I5BGWXs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Toyota\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/brands/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"brands",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/accounts/models/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyNjA1NTE5LCJpYXQiOjE3MzI2MDUyMTksImp0aSI6IjFjNTUyYjViOTVlMzQxOWY5ZmZiZjJiZmYyOWUzYTYzIiwidXNlcl9pZCI6Nn0.7qIPlTfHbudn4U8oo30iyfFVfggPEyYoQin2I5BGWXs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Corolla\",\r\n    \"brand\": 2\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/accounts/models/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"accounts",
+						"models",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/3/update/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyNjE1MTMwLCJpYXQiOjE3MzI2MTQ4MzAsImp0aSI6Ijk2MzFmNjIyOWMwZjQ0N2NhYTNkNTRjZGEyMjdiMGVhIiwidXNlcl9pZCI6M30.2ufoZU8SeDmevB6ZqFXmYy-d9FDPhXqLuPyuhrtm2lU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"BMW X6 for sale-\",\r\n    \"description\": \"A very clean BMW X6, well-maintained, available for sale.\",\r\n    \"price\": \"35000.00\",\r\n    \"currency\": \"USD\",\r\n    \"brand\": \"BMW\",\r\n    \"model\": \"X6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/accounts/cars/ad/1/update/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"accounts",
+						"cars",
+						"ad",
+						"1",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/1/view/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDk1Njc4LCJpYXQiOjE3MzMwOTUzNzgsImp0aSI6IjBmNzkwZTdjMjAwNTQ5NDhiZDMzY2VhZDFkZDQxYjNjIiwidXNlcl9pZCI6Mn0.aBe2nnqTVQiFFshjqJQkmRyxFjCOMyVQncccFMhAxqY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/2/view/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						"2",
+						"view",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/1/stats/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDUzMjM0LCJpYXQiOjE3MzMwNTI5MzQsImp0aSI6ImQ2NjM0NTcwNWFkNTQyNzg5NjY2MzJmNDQyZjdkNjRiIiwidXNlcl9pZCI6Nn0.Pdp3TFqc-OSFsRyEaxa9mdNN92VfbmkMCX0CnSER-qs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/3/stats/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						"3",
+						"stats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/block/26/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDA1Mzg4LCJpYXQiOjE3MzMwMDUwODgsImp0aSI6ImEyMDk0MDg4MDNiNzQ2ZmY4YmMwZmU1MzlmYjZkNWVhIiwidXNlcl9pZCI6OX0.mdchYuPwkMJmkgripo-tng6xDxZM7VYm_OKJcDXMpaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/block/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						"block",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/filter/?status=inactive",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDA1NDYyLCJpYXQiOjE3MzMwMDUxNjIsImp0aSI6IjA3YTliMmZiOTliOTQ5YzViMDYzYTk2ZjgwMTQ1MTljIiwidXNlcl9pZCI6N30.NJywMvoMbwPbS61ia5jy26aCluv3XIgP9lzFx2h2nW8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/filter/?status=inactive",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						"filter",
+						""
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "inactive"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/3/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTgzNzI4LCJpYXQiOjE3MzI5ODM0MjgsImp0aSI6IjJiMzRhNzRlMDhkMzQ1NzI4OTgyMTBhYTdmYTc3YmUzIiwidXNlcl9pZCI6Mn0.f1WhDNkojKdX-L7o-4Ao6C9XMfmSzlzzdQ--PqUZr10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/3/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTgzNzI4LCJpYXQiOjE3MzI5ODM0MjgsImp0aSI6IjJiMzRhNzRlMDhkMzQ1NzI4OTgyMTBhYTdmYTc3YmUzIiwidXNlcl9pZCI6Mn0.f1WhDNkojKdX-L7o-4Ao6C9XMfmSzlzzdQ--PqUZr10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/3/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTgzNzI4LCJpYXQiOjE3MzI5ODM0MjgsImp0aSI6IjJiMzRhNzRlMDhkMzQ1NzI4OTgyMTBhYTdmYTc3YmUzIiwidXNlcl9pZCI6Mn0.f1WhDNkojKdX-L7o-4Ao6C9XMfmSzlzzdQ--PqUZr10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/dealers/create/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTg1OTQ0LCJpYXQiOjE3MzI5ODU2NDQsImp0aSI6IjUwYTNkNjYyOTU2NzQyMThhYjIwYmU5N2I3Zjg5N2Q0IiwidXNlcl9pZCI6Nn0.6UPWp08I5mkd6LCrq0N7fOZzieQSh4Ks7jBJNvR3A1U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Перший приватний автосалон\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/dealers/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dealers",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/dealers/1/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTg3MjY4LCJpYXQiOjE3MzI5ODY5NjgsImp0aSI6IjMwNThlMGNlNDVjYTRiNmY5MGIxOWE0MWZiN2YwZDIwIiwidXNlcl9pZCI6Mn0.gN5sHejH6E7Q7ZIRiV7dRdwwNhTu0bRnIBU_iQXC5AM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/dealers/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dealers",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/1/delete/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDA0NjcwLCJpYXQiOjE3MzMwMDQzNzAsImp0aSI6ImFmZjkzN2RjM2MxMDQ5Yzg5NTA5YjU1NGEwYzRhOTVjIiwidXNlcl9pZCI6OX0.HerxoelWGvYQh7tyhaVEZLSIi0UVAtgOJvfPePdPslU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/1/delete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						"1",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/3/approve/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDA1NjQxLCJpYXQiOjE3MzMwMDUzNDEsImp0aSI6IjdkMzg5MWU0ZDE1NjRmNDU5YTVkODMyNzExMzkwMTRmIiwidXNlcl9pZCI6OX0._USSECO6oVv1ITK5R4jrTScNvPm-5QIIVdrp_t4Qelo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/3/approve/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						"3",
+						"approve",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/cars/ad/3/update/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyNjE1MTMwLCJpYXQiOjE3MzI2MTQ4MzAsImp0aSI6Ijk2MzFmNjIyOWMwZjQ0N2NhYTNkNTRjZGEyMjdiMGVhIiwidXNlcl9pZCI6M30.2ufoZU8SeDmevB6ZqFXmYy-d9FDPhXqLuPyuhrtm2lU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"BMW X6 for sale-\",\r\n    \"description\": \"A very clean BMW X6, well-maintained, available for sale.\",\r\n    \"price\": \"35000.00\",\r\n    \"currency\": \"USD\",\r\n    \"brand\": \"BMW\",\r\n    \"model\": \"X6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/ad/3/update/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						"ad",
+						"3",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/upgrade-to-premium/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDUxNTU5LCJpYXQiOjE3MzMwNTEyNTksImp0aSI6IjVlMzBkZDllYWU3MTRiNTRhNDUzZTRkYTI2YjhmOGExIiwidXNlcl9pZCI6N30.WJ9G-kPOLR8VlR8YaVUa_n7aupOq_TkHvN3WAOwVBBg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/upgrade-to-premium/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upgrade-to-premium",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/report/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDUzNzExLCJpYXQiOjE3MzMwNTM0MTEsImp0aSI6IjBhNjFmZGQxOTQzYTRlOGI5MWUzNTdjMmM5MjBmNDFmIiwidXNlcl9pZCI6Nn0.3tT4wiBtuHrM-yiCVJxxHfikIWL0dSv0tD3NBo9HKoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand_name\": \"Mercedes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/report/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"report",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/exchange-rates/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMDg2NDYwLCJpYXQiOjE3MzMwODYxNjAsImp0aSI6IjA5NjMyODA0ODU2ZjRjMzY4ODhjYTVmZmI2YjQxMzc1IiwidXNlcl9pZCI6NH0.T3vgt4N9hJhobZ5HpxpqdAs7ybZstCRSq1Xl4Lj6yFU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/exchange-rates/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"exchange-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
